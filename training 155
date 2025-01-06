@@ -1,0 +1,97 @@
+REASSIGNING  VALUES:-
+When used var latesr will be cosidered for all operations
+ <script>
+        var a=1;
+        a=5;
+        document.write(a+a);
+
+        console.log(a+a);
+        
+        
+    </script>
+ Here  with output=10 because latest a is declared for  5
+2)let reassigning
+ <script>
+        let a=1;
+        a=5;
+        document.write(a+a);
+
+        console.log(a+a);
+        
+        
+    </script>
+
+Output = 10 so its possible to reassign in let
+ <script>
+        const a=1;
+        a=5;
+        document.write(a+a);
+
+        console.log(a+a);
+        
+        
+    </script>
+
+Const is not helpful in reassiging
+REDECLARATION:-
+1)var can be redeclared
+  <script>
+        var a=1;
+        var a=5;
+        document.write(a+a);
+
+        console.log(a+a);
+        
+        
+    </script>
+2)let cant be redefined
+  <script>
+        let a=1;
+        let a=5;
+        document.write(a+a);
+
+        console.log(a+a);
+        
+        
+    </script>
+3)const cant be redefined
+  <script>
+        const a=1;
+        const a=5;
+        document.write(a+a);
+
+        console.log(a+a);
+        
+        
+    </script>
+
+
+BLOCK SCOPE:-
+Variables declared with var doesn’t have block  scope
+        var a="ram"
+        {
+            var a="kumar"
+            console.log(a);
+            
+        }
+        console.log(a);
+        
+ var cant be having blockscope
+  let a="ram"
+        {
+            let a="kumar"
+            console.log(a);
+            
+        }
+        console.log(a);
+        
+let can be declared in block scope , it is allowed for blockscope
+   const a="ram"
+        {
+            const a="kumar"
+            console.log(a);
+            
+        }
+        console.log(a);
+        
+ const can be declared in block scope
